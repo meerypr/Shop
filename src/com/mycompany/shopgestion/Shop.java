@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
-import model.Product;
-import model.Sale;
-import model.Amount;
+import com.mycompany.shopgestion.Product;
+import com.mycompany.shopgestion.Sale;
+import com.mycompany.shopgestion.Amount;
 /**
  *
  * @author mary-annperezroig
