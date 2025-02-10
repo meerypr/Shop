@@ -4,9 +4,8 @@
  */
 package com.mycompany.shopgestion;
 
-
 public class Product {
-private final int id;
+    private final int id;
     private String name;
     private Amount publicPrice;
     private Amount wholesalerPrice;
@@ -16,13 +15,12 @@ private final int id;
     static final double EXPIRATION_RATE = 0.60;
 
     public Product(String name, double wholesalerPrice, boolean available, int stock) {
-        this.id = ++totalProducts;
+        this.id = ++totalProducts;  // El totalProducts solo se incrementa una vez aquí
         this.name = name;
         this.wholesalerPrice = new Amount(wholesalerPrice);
         this.available = available;
         this.stock = stock;
-        totalProducts++;
-        this.publicPrice = new Amount(wholesalerPrice * 2); 
+        this.publicPrice = new Amount(wholesalerPrice * 2); // El precio público se calcula al doble del precio mayorista
     }
 
     public int getId() {
@@ -64,5 +62,9 @@ private final int id;
     public void setStock(int stock) {
         this.stock = stock;
     }
+    @Override
+    public String toString() {
+        return "ID: " + id + ", Nombre: " + name + ", Precio Público: " + publicPrice.getValue() +
+               ", Stock: " + stock + ", Disponible: " + (available ? "Sí" : "No");
+    }
 }
-
