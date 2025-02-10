@@ -14,9 +14,10 @@ public class Worker extends Person {
     private String Passwd;
     
     public Worker(String Name, String CodeW, String Passwd) {
+        super(Name);
         this.CodeW = CodeW;
         this.Passwd = Passwd;
-        super(Name);
+        
     }
    
 }

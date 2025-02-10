@@ -16,7 +16,7 @@ private final int id;
     static final double EXPIRATION_RATE = 0.60;
 
     public Product(String name, double wholesalerPrice, boolean available, int stock) {
-        this.id = totalProducts + 1;
+        this.id = ++totalProducts;
         this.name = name;
         this.wholesalerPrice = new Amount(wholesalerPrice);
         this.available = available;

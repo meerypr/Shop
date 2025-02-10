@@ -10,10 +10,10 @@ package com.mycompany.shopgestion;
  */
 
 public class Person {
-    private String Name;
+    private String name;
 
-    public Person(String Name) {
-        this.Name = Name;
+    public Person(String name) {
+        this.name = name;
     }
     
 }   

@@ -14,11 +14,12 @@ public class Client extends Person{
     private String CodeC;
     private double Money;
 
-    public Client(String Name, String CodeC, double Money) {
+    public Client(String Name, String CodeC, double Money) { 
+        super(Name);
         this.CodeC = CodeC;
         this.Money = Money;
-        super(Name);
+       
     }
     
 }   
-}
+
