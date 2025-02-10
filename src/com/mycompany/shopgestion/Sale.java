@@ -15,7 +15,7 @@ import java.util.Map;
 public class Sale {
     private String client;
     private Map<String, Integer> products;
-    private Amount amount; // Cambio al tipo Amount
+    private Amount amount; 
 
     public Sale(String client, Map<String, Integer> products, double amount) {
         this.client = client;
